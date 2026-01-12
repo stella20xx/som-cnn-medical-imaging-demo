@@ -9,7 +9,7 @@ seconds on CPU, and how a small U-Net student can match these masks with
 IoU ≈ 0.99 and Dice ≈ 0.98 **without any manual voxel labels**.
 
 See the full slide deck in  
-`docs/medical_ct_som_cnn_demo.pdf`  
+`[docs/medical_ct_som_cnn_demo.pdf](https://github.com/stella20xx/som-cnn-medical-imaging-demo/blob/main/docs/medical_ct_som_cnn_demo.pdf)`  
 
 
 ---
