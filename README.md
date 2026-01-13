@@ -9,9 +9,9 @@ This demo shows how a SOM can provide full-resolution “teacher” masks in
 high overlap (**IoU ≈ 0.99, Dice ≈ 0.98 vs SOM**) without any manual
 voxel-wise labels.
 
-For more details, see the slide deck in:
+See the full slide deck in  
+[medical_ct_som_cnn_demo.pdf](docs/medical_ct_som_cnn_demo.pdf)
 
-`docs/medical_ct_som_cnn_demo.pdf`
 
 
 ## Problem
@@ -118,7 +118,8 @@ across time, protocols, or slightly different acquisition geometries.
 
 ## Results (see PDF)
 
-Highlights from `docs/medical_ct_som_cnn_demo.pdf`:
+Highlights from  '[medical_ct_som_cnn_demo.pdf](docs/medical_ct_som_cnn_demo.pdf)'
+
 
 - SOM clustering produces clean lesion/defect masks with clear separation
   from background.
