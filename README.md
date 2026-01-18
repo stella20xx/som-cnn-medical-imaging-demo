@@ -6,8 +6,10 @@ Map (SOM) teacher and a lightweight CNN/U-Net student.
 
 This demo shows how a SOM can provide full-resolution “teacher” masks in
 **seconds on CPU**, and how a small U-Net student can match these masks with
-high overlap (**IoU ≈ 0.99, Dice ≈ 0.98 vs SOM**) without any manual
+high overlap (**IoU ≈ 0.99, Dice ≈ 0.98 vs SOM-derived teacher masks**) without any manual
 voxel-wise labels.
+
+**Note:** Some figures are displayed on a cropped slice canvas for visualization; interpretation should follow the overlay on the CT base image.
 
 See the full slide deck in  
 [medical_ct_som_cnn_demo.pdf](docs/medical_ct_som_cnn_demo.pdf)
@@ -118,8 +120,7 @@ across time, protocols, or slightly different acquisition geometries.
 
 ## Results (see PDF)
 
-Highlights from  '[medical_ct_som_cnn_demo.pdf](docs/medical_ct_som_cnn_demo.pdf)'
-
+Highlights from '[medical_ct_som_cnn_demo.pdf](docs/medical_ct_som_cnn_demo.pdf)'
 
 - SOM clustering produces clean lesion/defect masks with clear separation
   from background.
@@ -129,10 +130,3 @@ Highlights from  '[medical_ct_som_cnn_demo.pdf](docs/medical_ct_som_cnn_demo.pdf
   masks without manual voxel labeling.
 - Geometry-consistent registration (KAZE + RANSAC) enables longitudinal
   visualization and tracking of lesion evolution.
-
-
-## Status
-
-This repository currently serves as a documentation/demo hub for the
-CT-style SOM–CNN pipeline. Code and runnable notebooks will be added
-progressively as the framework is cleaned and released.
