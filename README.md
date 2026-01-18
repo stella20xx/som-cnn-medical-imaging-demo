@@ -130,3 +130,8 @@ Highlights from '[medical_ct_som_cnn_demo.pdf](docs/medical_ct_som_cnn_demo.pdf)
   masks without manual voxel labeling.
 - Geometry-consistent registration (KAZE + RANSAC) enables longitudinal
   visualization and tracking of lesion evolution.
+
+## 🔬 CT Demo: SOM → Pseudo-label → Segmentation
+
+![SOM-CT Demo](figures/demo.gif)
+
