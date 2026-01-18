@@ -133,5 +133,5 @@ Highlights from '[medical_ct_som_cnn_demo.pdf](docs/medical_ct_som_cnn_demo.pdf)
 
 ## 🔬 CT Demo: SOM → Pseudo-label → Segmentation
 
-![SOM-CT Demo](figures/demo.gif)
+![SOM-CT Demo](figure/demo.gif)
 
