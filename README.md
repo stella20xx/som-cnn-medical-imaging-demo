@@ -6,7 +6,7 @@ Map (SOM) teacher and a lightweight CNN/U-Net student.
 
 This demo shows how a SOM can provide full-resolution “teacher” masks in
 **seconds on CPU**, and how a small U-Net student can match these masks with
-high overlap (**IoU ≈ 0.99, Dice ≈ 0.98 vs SOM-derived teacher masks**) without any manual
+high overlap (**IoU ≈ 0.98, Dice ≈ 0.99 vs SOM-derived teacher masks**) without any manual
 voxel-wise labels.
 
 **Note:** Some figures are displayed on a cropped slice canvas for visualization; interpretation should follow the overlay on the CT base image.
