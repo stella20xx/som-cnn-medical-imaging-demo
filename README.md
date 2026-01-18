@@ -124,8 +124,8 @@ Highlights from '[medical_ct_som_cnn_demo.pdf](docs/medical_ct_som_cnn_demo.pdf)
 
 - SOM clustering produces clean lesion/defect masks with clear separation
   from background.
-- U-Net students trained purely on SOM labels achieve IoU ≈ 0.99 and
-  Dice ≈ 0.98 versus the SOM teacher on held-out slices.
+- U-Net students trained purely on SOM labels achieve IoU ≈ 0.98 and
+  Dice ≈ 0.99 versus the SOM teacher on held-out slices.
 - The pipeline scales to whole volumes (all slices), producing full-volume
   masks without manual voxel labeling.
 - Geometry-consistent registration (KAZE + RANSAC) enables longitudinal
