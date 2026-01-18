@@ -9,7 +9,10 @@ This demo shows how a SOM can provide full-resolution “teacher” masks in
 high overlap (**IoU ≈ 0.98, Dice ≈ 0.99 vs SOM-derived teacher masks**) without any manual
 voxel-wise labels.
 
-**Note:** Some figures are displayed on a cropped slice canvas for visualization; interpretation should follow the overlay on the CT base image.
+**Note on visualization.**  
+Some figures (including the demo animation) are displayed on a cropped slice canvas
+purely for visualization clarity. All interpretations should be based on the
+overlay relative to the original CT slice, not the cropped canvas itself.
 
 See the full slide deck in  
 [medical_ct_som_cnn_demo.pdf](docs/medical_ct_som_cnn_demo.pdf)
@@ -117,6 +120,11 @@ across time, protocols, or slightly different acquisition geometries.
 - **Laptop-friendly:** SOM teacher runs in seconds on CPU; the U-Net student
   trains in a few minutes on a single-GPU laptop.
 
+**Scope of results.**  
+Quantitative metrics reported here (IoU / Dice) measure agreement between the
+CNN/U-Net student and the SOM-derived teacher masks. The goal is to demonstrate
+label-free consistency and reproducibility, rather than comparison against
+expert-drawn voxel annotations.
 
 ## Results (see PDF)
 
@@ -133,5 +141,10 @@ Highlights from '[medical_ct_som_cnn_demo.pdf](docs/medical_ct_som_cnn_demo.pdf)
 
 ## 🔬 CT Demo: SOM → Pseudo-label → Segmentation
 
+**What this demo shows.**  
+The animation below illustrates the *end-to-end pipeline* on a representative CT slice:
+SOM clustering → pseudo-label generation → CNN/U-Net segmentation.
+The purpose is to visualize the *teacher–student behavior and consistency*,
+not to present manually annotated ground truth.
 ![SOM-CT Demo](figure/demo.gif)
 
